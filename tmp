@@ -1,0 +1,22 @@
+// import {
+//     comparisonLists,
+//     admin,
+//     logMode,
+//     logOutput,
+//     numberSchemeLog,
+//     variableSchemeLog,
+//     printPuzzleLog,
+//     hintLog,
+//     currentInput,
+// 	numberSchemeArray,
+// } from './0-variable-declarations.js';
+// window.comparisonLists=comparisonLists;
+// window.admin=admin;
+// window.logMode=logMode;
+// window.logOutput=logOutput;
+// window.numberSchemeLog=numberSchemeLog;
+// window.variableSchemeLog=variableSchemeLog;
+// window.printPuzzleLog=printPuzzleLog;
+// window.hintLog=hintLog;
+// window.currentInput=currentInput;
+// window.numberSchemeArray=numberSchemeArray;
