@@ -29,3 +29,15 @@ as clean up of comments, naming conventions, implementation of file separations 
 ### v3
 
 Future overhaul to take place at some as yet unknown date.
+
+Feature updates:
+
+- Nifty UI updates, super happy fun time interface updates like UI schemes and accessibility.
+- Start a new game option when either the start button or difficulty button are pressed.
+- User stat tracking.
+
+### To Do
+
+- Clean code.
+- String literal conversions
+- CSS
