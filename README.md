@@ -38,6 +38,7 @@ Feature updates:
 
 ### To Do
 
+- Solution
 - Clean code.
 - String literal conversions
 - CSS
