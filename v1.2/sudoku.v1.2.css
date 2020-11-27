@@ -1,0 +1,203 @@
+/* =============================================== Body */
+body{
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	font-size: 10pt;
+}
+/* =============================================== Header & Footer */
+header,footer{
+	flex: 1;
+	text-align: center;
+	width: 350px;
+	color: #fff;
+}
+/* Desktop CSS */
+@media(min-width:600px){
+	header,footer{
+		width: 500px;
+	}
+}
+header h1{
+	flex: 0 1 auto;
+}
+header{
+	order: 1;
+}
+footer{
+	order: 3;
+	flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+	margin-top: 20px;
+}
+/* =============================================== Puzzle Container & Tiles */
+#puzzleContainer{
+    display: flex;
+	flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+	order: 2;
+	padding: 0;
+	height: 350px;
+	width: 350px;
+}
+/* Desktop CSS */
+@media(min-width:600px){
+	#puzzleContainer{
+		width: 500px;
+		height: 500px;
+	}
+}
+.tile{
+	display: block;
+    order: 0;
+	flex: 0 1 auto;
+	align-self: auto;
+	background-color: #fff;
+	text-align: center;
+	font-size: 18pt;
+	margin: 2px;
+	height: 31px;
+	width: 31px;
+}
+/* Desktop CSS */
+@media(min-width:600px){
+	.tile{
+		width:46px;
+		height:46px;
+	}
+}
+.tile-l-margin{
+	margin-left: 4px;
+}
+.tile-r-margin{
+	margin-right: 4px;
+}
+.tile-t-margin{
+	margin-top: 4px;
+}
+/* =============================================== Control & Display Container Class */
+.control-container{
+	flex: 1;
+	margin: 4px;
+	height: 25px;
+	border: 1px solid #fff;
+	padding: 4px;
+	text-align: center;
+	font-size: 14pt;
+	color: #fff;
+}
+/* =============================================== Timer Display */
+/* #timerContainer{} */
+/* =============================================== Hint Control */
+#hintContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	height: auto;
+	text-align: left;
+}
+#hintContainer div{
+	flex: 1;
+	margin: 4px;
+	border: 1px solid #fff;
+	padding: 4px;
+	text-align: center;
+}
+#hint-btn{
+	cursor: pointer;
+}
+#hint-btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+/* =============================================== Start Button */
+#startBtn{
+	cursor: pointer;
+}
+#startBtn:hover{
+	background-color: #fff;
+	color: #000;
+}
+/* =============================================== Difficulty Control */
+#difficulty-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	height: auto;
+	text-align: left;
+}
+#difficulty-container div{
+	flex: 1;
+	margin: 4px;
+	border: 1px solid #fff;
+	padding: 4px;
+	text-align: center;
+}
+#difficulty-btn-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+.difficulty-btn{
+	background-color: #fff;
+	color: #000;
+	font-size: 10pt;
+	cursor: pointer;
+}
+/* #difficulty-title{
+	/* Need to center the text 
+} */
+/* =============================================== Solution Overlay */
+#solvedOverlay{
+	position: absolute;
+	width: 340px;
+	height: 340px;
+	background-color: #ccc;
+	color: #000;
+	font-size: 24pt;
+	text-align: center;
+	z-index: 99;
+	visibility: hidden;
+	opacity: .98;
+}
+/* Desktop CSS */
+@media(min-width:600px){
+	#solvedOverlay{
+		width: 490px;
+		height: 490px;
+	}
+}
+/* =============================================== Admin Controls */
+#printButtonContainer{
+	border: 1px solid #fff;
+	padding: 2px;
+	color: #fff;
+}
+.printButton{
+	float: left;
+	margin-top: 2px;
+	margin-right: 4px;
+	border: 1px solid #fff;
+	padding: 2px;
+	cursor: pointer;
+}
+.printButton:hover{
+	background-color: #fff;
+	color: #000;
+}
