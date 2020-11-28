@@ -11,7 +11,7 @@ const printPuzzle=()=>{
 	logger(`START: printPuzzle()`);
 
 	for(let i=0;i<81;i++){
-		document.getElementById(`tile_${i}`).innerHTML=numberSchemeArray[i];
+		document.getElementById(`tile_${i}`).value=numberSchemeArray[i];
 	}
 
 	// Logging output.

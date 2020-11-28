@@ -53,7 +53,7 @@ const hint=(opt)=>{
 		// Hash to contain possible hint values for the selectedTile.
 		let hintList={}
 		for(let i=0;i<tileComparisonList.length;i++){
-			let val=document.getElementById(`tile_${tileComparisonList[i]}`).innerHTML;
+			let val=document.getElementById(`tile_${tileComparisonList[i]}`).value;
 			if(!hintList[val]&&val!==''){
 				hintList[val]=val;
 			}

@@ -54,7 +54,9 @@ puzzleContainer.appendChild(solvedOverlay);
 // Tiles.
 let tileR=new Array();
 for(let i=0;i<81;i++){
-		tileR[i]=document.createElement(`div`);
+		tileR[i]=document.createElement(`input`);
+		tileR[i].setAttribute(`type`,`text`);
+		// tileR[i].setAttribute(`value`,`${i}`);
 		tileR[i].setAttribute(`id`,`tile_${i}`);
 		tileR[i].setAttribute(`class`,`tile`);
 		// Tiles needing additional right margin, visually separating inner squares.

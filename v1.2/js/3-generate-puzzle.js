@@ -21,6 +21,9 @@ const generatePuzzle=()=>{
 
 	// Catch if timer-container has a value.
 	document.getElementById(`timerContainer`).innerHTML=``;
+
+	// Catch if hint has a value.
+	document.getElementById(`hint`).innerHTML=``;	
 	
 	//Set logmode to clear.
 	logMode=0;

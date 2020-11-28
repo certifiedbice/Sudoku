@@ -121,13 +121,12 @@ const tileSelect=(tileNumber)=>{
 
 // Validates a keypress and updates the tile value.
 const tileInput=(key)=>{
-
 	// Validate key is is in the range 1-9.
 	let validKey=/[1-9]/g.test(key);
 
 	if(validKey){
 		// Update the UI.
-		document.getElementById(`tile_${selectedTile}`).innerHTML=key;
+		document.getElementById(`tile_${selectedTile}`).value=key;
 		
 		// Check Solution.
 		validateSolution();

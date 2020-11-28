@@ -34,7 +34,7 @@ Object.entries(exports2).forEach(([name,exported])=>window[name]=exported);
 /*======================================= #3. Generate Puzzle */
 import generatePuzzle from './3-generate-puzzle.js';
 window.generatePuzzle=generatePuzzle;
-document.addEventListener('keypress',e=>{if(selectedTile!==null){tileInput(e.key);}});
+document.addEventListener('keypress',e=>{e.preventDefault();if(selectedTile!==null){tileInput(e.key);}});
 /*======================================= #4. Logger */
 import logger from './4-logger.js';
 window.logger=logger;

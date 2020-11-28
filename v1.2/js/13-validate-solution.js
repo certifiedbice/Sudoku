@@ -15,7 +15,7 @@ const validateSolution=()=>{
 	for(let i=0;i<81;i++){
 		
 		// Validate tile.
-		let validTile=/[1-9]/g.test(document.getElementById(`tile_${i}`).innerHTML);
+		let validTile=/[1-9]/g.test(document.getElementById(`tile_${i}`).value);
 
 		// Bad tile.
 		if(validTile===false){
@@ -23,7 +23,7 @@ const validateSolution=()=>{
 		}
 		else{
 			// Build array for comparison.
-			solutionArray.push(document.getElementById(`tile_${i}`).innerHTML);
+			solutionArray.push(document.getElementById(`tile_${i}`).value);
 		}
 	
 	}
