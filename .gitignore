@@ -19,7 +19,7 @@
 .env.production.local
 .gitignore
 /v1
-/written-original-work
+written-original-work/*
 
 # Environment Variables
 .env
